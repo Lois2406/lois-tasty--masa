@@ -1,49 +1,115 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width= , initial-scale=1.0">
-    <title>Document</title>
-<link rel="stylesheet" href="styles.css">
-<h1>lois tasty masa</h1> 
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lois Tasty Masa</title>
 
+  <!-- Optional: load a clean system-like font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-<link rel="stylesheet" href="style.css">
-
-    
+  <link rel="stylesheet" href="styles.css" />
 </head>
-<body style="background-color: aqua;">
-    
-    <p class="intro">to promote the business, display product, attract new costomers and provide contact information fir orders</p>
-    <p class="intro">to promote the business, display product, attract new costomers and provide contact information fir orders</p>
-    <p>to promote the business, display product, attract new costomers and provide contact information fir orders</p>
-    <p style="; 1px solid blue;">to promote the business, display product, attract new costomers and provide contact information fir orders</p>
+<body>
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a class="brand" href="/">Lois Tasty Masa</a>
+      <nav class="main-nav" role="navigation" aria-label="Main navigation">
+        <ul>
+          <li><a href="#recipes">Recipes</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact" class="cta">Order / Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-    
-<ul>
-    <h2>Our Service</h2>
-    <li>one</li>
-    <li>two</li>
-</ul>    
+  <main id="content" role="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero-inner">
+        <h1 id="hero-title">Authentic Masa — Homemade & Delicious</h1>
+        <p class="lead">We make and sell fresh masa-based foods — arepas, tamales and more. Quality ingredients, family recipes.</p>
+        <p class="hero-actions">
+          <a class="btn btn-primary" href="#recipes">Browse Recipes</a>
+          <a class="btn" href="#contact">Order Now</a>
+        </p>
+      </div>
+    </section>
 
-<ol>
-    <h2>other Service</h2>
-    <li>quality</li>
-    <li>fast service</li>
-</ol>
+    <section id="recipes" class="container section">
+      <h2>Featured Items</h2>
+      <p class="muted">Some of our most-loved masa dishes — click to view details or order.</p>
 
-<a href="tel:+2349061622660">call now</a>
+      <div class="grid">
+        <article class="card" tabindex="0">
+          <img src="images/Screenshot (2).png" alt="Arepa sample" loading="lazy">
+          <div class="card-body">
+            <h3>Arepa de Maíz</h3>
+            <p class="muted">Crispy outside, soft inside — served with cheese or butter.</p>
+            <p><a class="btn" href="#contact">Order</a></p>
+          </div>
+        </article>
 
-<img src="images/Screenshot (2).png" alt="" width="200">
+        <article class="card" tabindex="0">
+          <img src="images/placeholder-2.jpg" alt="Tamal" loading="lazy">
+          <div class="card-body">
+            <h3>Tamal de Masa</h3>
+            <p class="muted">Traditional steamed tamales with savory fillings.</p>
+            <p><a class="btn" href="#contact">Order</a></p>
+          </div>
+        </article>
 
-<button onmouseenter="greetuser();">greetuser</button>
-<button id="messageBtn">showmessage</button>
-<script src="app.js"></script>
+        <article class="card" tabindex="0">
+          <img src="images/placeholder-3.jpg" alt="Snack" loading="lazy">
+          <div class="card-body">
+            <h3>Masa Snack</h3>
+            <p class="muted">Simple, authentic flavors made fresh daily.</p>
+            <p><a class="btn" href="#contact">Order</a></p>
+          </div>
+        </article>
+      </div>
+    </section>
 
+    <section id="about" class="container section">
+      <h2>About Us</h2>
+      <p>Lois Tasty Masa started as a family kitchen — we share the recipes and passion for masa with our community. We focus on quality, consistency and friendly service.</p>
+    </section>
 
+    <section id="contact" class="container section">
+      <h2>Order & Contact</h2>
+      <p class="muted">Call or send a message to place an order or ask questions.</p>
 
+      <ul class="contact-list">
+        <li><strong>Phone:</strong> <a href="tel:+2349061622660">+234 906 162 2660</a></li>
+        <li><strong>Email:</strong> <a href="mailto:hello@loistastymasa.example">hello@loistastymasa.example</a></li>
+      </ul>
 
+      <form id="contactForm" class="contact-form" aria-label="Contact form" novalidate>
+        <div class="form-row">
+          <label for="name">Your name</label>
+          <input id="name" name="name" type="text" required />
+        </div>
+        <div class="form-row">
+          <label for="phone">Phone</label>
+          <input id="phone" name="phone" type="tel" required />
+        </div>
+        <div class="form-row">
+          <label for="message">Message / Order details</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+        </div>
+        <div class="form-row">
+          <button type="submit" class="btn btn-primary">Send message</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <p>&copy; 2026 Lois Tasty Masa — Handmade masa. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="app.js" defer></script>
 </body>
-
-
 </html>
